@@ -21,6 +21,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const helmet = require("helmet");
 const atlasConnect = process.env.ATLAS_CONNECT; // Rememeber This is a private token taht you take from your atlas account..
 const MongoStore = require('connect-mongo');
+const secret = process.env.SECRET;
 
 // old url: 'mongodb://127.0.0.1:27017/YelpCampDB'
 
@@ -54,7 +55,7 @@ const store = MongoStore.create({
     mongoUrl: "mongodb://127.0.0.1:27017/YelpCampDB",
     touchAfter: 24 * 60 * 60, //if the data is untouched and not updated then we update after 24hrs, not continuesly.
     crypto: {
-        secret: 'thisshouldbeabettersecret!'
+        secret: secret
     }
 });
 
@@ -65,7 +66,7 @@ store.on("error",function(e){
 const sessionOpts = {
     store,
     name: "maps", // attribute used to alter the name of the cookie.
-    secret: "secretOfSecrets",
+    secret: secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
