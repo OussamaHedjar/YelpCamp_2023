@@ -52,7 +52,7 @@ application.set("view engine", "ejs");
 application.use(mongoSanitize());
 
 const store = MongoStore.create({
-    mongoUrl: "mongodb://127.0.0.1:27017/YelpCampDB",
+    mongoUrl: atlasConnect,
     touchAfter: 24 * 60 * 60, //if the data is untouched and not updated then we update after 24hrs, not continuesly.
     crypto: {
         secret: secret
