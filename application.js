@@ -19,7 +19,7 @@ const LocalStartegy = require("passport-local");
 const User = require("./models/user");
 const mongoSanitize = require("express-mongo-sanitize");
 const helmet = require("helmet");
-const atlasConnect = process.env.ATLAS_CONNECT; // Rememeber This is a private token.
+const atlasConnect = process.env.ATLAS_CONNECT; // Rememeber This is a private token taht you take from your atlas account..
 const MongoStore = require('connect-mongo');
 
 // old url: 'mongodb://127.0.0.1:27017/YelpCampDB'
