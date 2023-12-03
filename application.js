@@ -25,7 +25,7 @@ const secret = process.env.SECRET;
 
 // old url: 'mongodb://127.0.0.1:27017/YelpCampDB'
 
-mongoose.connect("mongodb://127.0.0.1:27017/YelpCampDB")
+mongoose.connect(atlasConnect)
     .then(() => {
         console.log("Connected.");
     })
