@@ -1,5 +1,5 @@
 # YelpCamp_2023
-The YelpCamp project was a coding along and was instructed by Colt Steele and supervised by Zarko, and Akshay in any case of error or problem, whom I am thankful for all of their hard work and help.
+The YelpCamp project was a code-along and was instructed by Colt Steele and supervised by Zarko, and Akshay in any case of error or problem, whom I am thankful for all of their hard work and help.
 
 My version differs slightly from the original one, and this is because since Colt posted the videos for building the web application from scratch some packages have changed several features, which led me to look for solutions and thankfully I found some of them in the discussion section in the course or notes by Zarko.
 
